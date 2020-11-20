@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/foto/me",
+      "handler": "foto.me",
+      "config": {
+        "policies": []
+      }
+    }, 
+    {
+      "method": "GET",
+      "path": "/fotos",
+      "handler": "foto.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fotos/count",
+      "handler": "foto.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fotos/:id",
+      "handler": "foto.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fotos",
+      "handler": "foto.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fotos/:id",
+      "handler": "foto.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fotos/:id",
+      "handler": "foto.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

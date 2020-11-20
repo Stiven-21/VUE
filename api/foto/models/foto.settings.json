@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fotos",
+  "info": {
+    "name": "foto",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "imagen": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "user": {
+      "via": "foto",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
